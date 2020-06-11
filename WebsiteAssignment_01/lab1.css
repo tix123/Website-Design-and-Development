@@ -1,0 +1,214 @@
+/*lab1.css - stylesheet examples*/
+
+body
+{
+	background-color: #E16B8C;
+}
+
+nav
+{
+	text-align: center;
+	background-color:#F596AA;
+	padding:5px;
+}
+
+nav ul li
+{
+	display:inline;
+	margin-right:5%;
+}
+
+nav ul li a
+{
+	text-decoration:none;
+	font-size:40px;
+	font-family: Cooper Black, Arial, Times New Roman;
+	color:#86473F;
+}
+
+h1
+{
+	text-align: center;	
+	font-family: Cooper Black, Arial, Times New Roman;
+	font-size:80px;
+	color: #86473F;
+}
+
+h2
+{
+	text-align: center;	
+	font-size:40px;
+	font-family: Edwardian Script ITC, Arial, Times New Roman;
+	font-style: bold;
+	color:#fff;
+}
+
+h3
+{
+	text-align: center;
+	font-family: Cooper Black, Arial, Times New Roman;
+	font-size:40px;
+	color: #86473F;
+}
+
+section
+{
+	padding-top:20px;
+}
+	
+figure
+{
+	text-align: center;
+}
+
+header figure img
+{
+	height:400px;
+}
+
+
+figcaption
+{
+	text-align: center;
+	font-family: Freestyle Script, Arial, Times New Roman;
+	font-style: italic;
+	font-size:30px;
+	color: #fff;
+	padding-bottom:10px;
+}
+
+hr
+{
+	border: none;
+	border-top:5px dotted #86473F;
+	width: 80%;
+	margin-top:30px;
+}
+
+#AboutMe p
+{
+	text-align: center;	
+	font-size:40px;
+	font-family: Freestyle Script, Arial, Times New Roman;
+	font-style: bold;
+	color: #fff;
+}
+
+#AboutMe figure img
+{
+	width:800px;
+}
+
+#Courses table
+{
+	margin-left:auto;
+	margin-right:auto;
+	text-align: left;
+	font-family: Arial Rounded MT Bold, Arial, Times New Roman;
+	font-size:20px;
+	color:#fff;
+}
+
+#Courses table tr th
+{
+	padding:10px;
+	background-color:#D75455;
+	border-style: solid;
+	border-color:#E16B8C;
+}
+
+#Courses table tr td
+{
+	padding:10px;
+	background-color:#F596AA;
+	border-style: solid;
+	border-color:#E16B8C;
+}
+
+#Courses p
+{
+	text-align: center;	
+	font-size:40px;
+	font-family: Freestyle Script, Arial, Times New Roman;
+	font-style: bold;
+	color: #fff;
+}
+
+#WorkExperience p
+{
+	text-align: center;	
+	font-size:40px;
+	font-family: Freestyle Script, Arial, Times New Roman;
+	font-style: bold;
+	color: #fff;
+}
+
+#WorkExperience table
+{
+	margin-left:auto;
+	margin-right:auto;
+	text-align: left;
+	font-family: Arial Rounded MT Bold, Arial, Times New Roman;
+	font-size:20px;
+	color:#fff;
+}
+
+#WorkExperience table th
+{
+	font-size:30px;
+}
+
+#company
+{
+	font-size:25px;
+	font-style:italic;
+}
+
+#date
+{
+	font-style:italic;
+}
+
+#ContactMe 
+{
+	text-align: center;
+	
+}
+
+#ContactMe p
+{
+	text-align: center;	
+	font-size:40px;
+	font-family: Freestyle Script, Arial, Times New Roman;
+	font-style: bold;
+	color: #fff;
+}
+
+#ContactMe table
+{
+	margin-left:auto;
+	margin-right:auto;
+	text-align: left;
+	font-family: Arial, Times New Roman;
+	color:#fff;
+}
+
+footer
+{
+	text-align: center;
+	padding:20px;
+}
+
+footer a
+{
+	text-decoration:none;
+	color:#86473F;
+	font-size:40px;
+	font-family: Cooper Black, Arial, Times New Roman;
+	
+}
+
+a:hover
+{
+	color: #CC543A;
+}

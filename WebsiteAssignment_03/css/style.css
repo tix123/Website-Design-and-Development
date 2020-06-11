@@ -1,0 +1,60 @@
+
+body::after
+{
+	background-image: url('../img/hotel.jpg');
+	/* Source:https://www.tripadvisor.ca/Vacation_Packages-g34467-Naples_Florida-Vacations.html */
+	background-size: cover;
+	background-position:center;
+	opacity: 0.5;
+	content:"";
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index:-1;
+}
+
+th
+{
+	font-size:50px;
+}
+
+tr
+{
+	line-height:50px;
+}
+
+td:nth-of-type(odd)
+{
+	font-size:25px;
+	font-style:bold;
+	text-align:right;
+	font-family: Arial;
+}
+
+td:nth-of-type(even)
+{
+	font-size:16px;
+}
+
+input
+{
+	height:25px;
+	
+}
+
+table
+{
+	background-color: #ddd;
+	margin:auto;
+	opacity: 0.8;
+	/*
+	border: 5px solid #fff;
+	*/
+	padding:10px;
+}
+
+
+
+

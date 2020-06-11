@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>City Delicatessen</title>
+	<meta name="author" content="HSIAOYU CHEN">
+	<link href="css\style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/order.js"></script>
+</head>
+
+
+<body>
+
+	<header>
+	City Delicatessen
+	</header>
+
+	<form onsubmit="order(); return false">
+	<table id="main_table">
+	<tr>
+		<td colspan="2" id="form_title">Order Your Meal Online</td>
+	</tr>
+	<tr>
+		<td colspan="2"><hr></td>
+	</tr>
+	<tr>
+		<td colspan="2" class="date"><span id="current_date"></span></td>
+	</tr>
+	<tr>
+		<td colspan="2" class="welcome" ><span id="welcome"></span></td>
+	</tr>
+	<tr>
+		<td colspan="2"><hr></td>
+	</tr>
+	
+	<tr>
+		<td><label for="firstname">First Name</label></td>
+		<td><input type="text" name="firstname" id="firstname" pattern="[A-Z a-z\-]{1,25}" title="Alphabetical characters, space and hyphens only" required></td>
+	</tr>
+	<tr>	
+		<td><label for="lastname">Last Name</label></td>
+		<td><input type="text" name="lastname" id="lastname" pattern="[A-Z a-z\-]{1,25}" title="Alphabetical characters, space and hyphens only" required></td>
+	</tr>
+	<tr>
+		<td><label for="address">Address</label></td>
+		<td><input type="text" name="address" id="address" size="50" required></td>
+	</tr>
+	<tr>
+		<td><label for="phone">Phone Number</label></td>
+		<td><input type="tel" name="phone" id="phone" pattern="\d{3}-\d{3}-\d{4}" placeholder="444-999-1234" title="Example: 444-999-1234" required> &nbsp; Example: 444-999-1234</td>
+	</tr>
+	<tr>
+		<td colspan="2"><hr></td>
+	</tr>
+	<tr>
+		<th colspan="2" class="section">
+		PIZZA
+		</th>
+	</tr>
+	<tr>
+		<td>Flavor</td>
+		<td>
+			<table>
+			<tr>
+			<td><input type="radio" name="flavor" id="cheesy" value="Super Cheesy" checked><label for="cheesy">Super Cheesy</label><br>
+			<img src="img\cheesy.jpg" alt="Super Cheesy"></td>
+			<!-- Source: https://www.pizza73.com/Pizza73M/order/#menu/category/10050  -->
+			<td><input type="radio" name="flavor" id="meaty" value="Extra Meaty"><label for="meaty">Extra Meaty</label><br>
+			<img src="img\meaty.jpg" alt="Extra Meaty"></td>
+			<!-- Source: https://www.pizza73.com/Pizza73M/order/#menu/category/10050  -->
+			<td><input type="radio" name="flavor" id="veggy" value="Really Veggy"><label for="veggy">Really Veggy</label><br>
+			<img src="img\veggy.jpg" alt="Really Veggy"></td>
+			<!-- Source: https://www.pizza73.com/Pizza73M/order/#menu/category/10050  -->
+			</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>Sizes and prices</td>
+		<td><input type="radio" name="size_price" id="Small" value="8.50" checked><label for="Small">Small: $8.50</label>
+		<input type="radio" name="size_price" id="Medium" value="11.50"><label for="Medium">Medium: $11.50</label>
+		<input type="radio" name="size_price" id="Large" value="14.00"><label for="Large">Large: $14.00</label>
+		<input type="radio" name="size_price" id="Extra Large" value="16.50"><label for="Extra Large">Extra Large: $16.50</label></td>
+	</tr>
+	<tr>
+		<td><label for="pizza_qty">Quantity</label></td>
+		<td><input type="number" name="pizza_qty" id="pizza_qty" value="0" min="0" max="99" setp="1" ></td>
+	</tr>
+	<tr>	
+		<td>Extra toppings</td>
+		<td><input type="checkbox" name="extra_cheese" id="Extra Cheese" value="1.75"><label for="Extra Cheese">Extra Cheese</label>
+		<input type="checkbox" name="pepperoni" id="Pepperoni" value="1.75"><label for="Pepperoni">Pepperoni</label>
+		<input type="checkbox" name="mushrooms" id="Mushrooms" value="1.75"><label for="Mushrooms">Mushrooms</label>
+		<input type="checkbox" name="bacon" id="Bacon" value="1.75"><label for="Bacon">Bacon</label>
+		<input type="checkbox" name="olives" id="Olives" value="1.75"><label for="Olives">Olives</label></td>
+	</tr>
+	<tr>
+		<td colspan="2"><hr></td>
+	</tr>
+	<tr>
+		<th colspan="2" class="section">
+		SANDWICH
+		</th>
+	</tr>
+	<tr>
+		<td>Flavor</td>
+		<td>
+		<table>
+			<tr>
+			<td><input type="radio" name="sandwich" id="All Garden Vegetarian" value="7.50" checked><label for="All Garden Vegetarian">All Garden Vegetarian $7.50</label><br>
+			<img src="img\vegetarian.jpg" alt="vegetarian sandwich"></td>
+			<!-- Source: https://cafezupas.com/menu.html#sandwiches -->
+			<td><input type="radio" name="sandwich" id="Big Beef on a Bun" value="8.50"><label for="Big Beef on a Bun">Big Beef on a Bun $8.50</label><br>
+			<img src="img\beef_bun.jpg" alt="beef bun sandwich"></td>
+			<!-- Source: https://www.dreamstime.com/royalty-free-stock-photography-roast-beef-bun-image27641127 -->
+			<td><input type="radio" name="sandwich" id="Mixed Grill" value="9.50"><label for="Mixed Grill">Mixed Grill $9.50</label><br>
+			<img src="img\mixed_grill.jpg" alt="mixed grill sandwich"></td>
+			<!-- Source: https://cafezupas.com/menu.html#sandwiches -->
+			<td><input type="radio" name="sandwich" id="Grilled Pork" value="9.50"><label for="Grilled Pork">Grilled Pork $9.50</label><br>
+			<img src="img\grilled_pork.jpg" alt="grilled pork sandwich"></td>
+			<!-- Source: https://cafezupas.com/menu.html#sandwiches -->
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>	
+		<td><label for="sandwich_qty">Quantity</label></td>
+		<td><input type="number" name="sandwich_qty" id="sandwich_qty" value="0" min="0" max="99" setp="1" > </td>
+	</tr>
+	<tr>
+		<td colspan="2"><hr></td>
+	</tr>
+	<tr>
+		<th colspan="2" class="section">
+		DRINK
+		</th>
+	</tr>
+	<tr>
+		<td>Flavor</td>
+		<td><input type="radio" name="drink" id="Cola" checked><label for="Cola">Cola</label>
+		<input type="radio" name="drink" id="Orange"><label for="Orange">Orange</label>
+		<input type="radio" name="drink" id="Lemon"><label for="Lemon">Lemon</label>
+		<input type="radio" name="drink" id="Root Beer"><label for="Root Beer">Root Beer</label></td>
+	</tr>
+	<tr>	
+		<td>Sizes and prices</td>
+		<td><input type="radio" name="drink_size" id="Small" value="1.25"checked><label for="drink_small">Small: $1.25</label>
+		<input type="radio" name="drink_size" id="Medium" value="1.75"><label for="drink_medium">Medium $1.75</label>
+		<input type="radio" name="drink_size" id="Large" value="2.00"><label for="drink_large">Large: $2.00</label></td>
+	</tr>
+	<tr>	
+		<td><label for="drink_qty">Quantity</label></td>
+		<td><input type="number" name="drink_qty" id="drink_qty" value="0" min="0" max="99" setp="1" ></td>
+	</tr>
+	<tr>
+		<td colspan="2"><hr></td>
+	</tr>
+	<tr>
+		<th colspan="2">
+		<div class="button"><input type="submit" value="Send" >&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Clear"></div>
+		</th>
+	</tr>
+	
+	</table>
+	</form>
+
+</body>
+
+
+
+</html>

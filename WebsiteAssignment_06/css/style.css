@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap');
+
+header
+{
+	position:fixed;
+	top:0;
+	right:0;
+	left:0;
+	background-color:#F50;
+	font-size:70px;
+	text-align:center;
+	font-family: 'Zhi Mang Xing', cursive;
+	color:#fff;
+}
+
+body::after
+{
+	background-image:url('../img/background.jpg');
+	/* Source: https://www5.pizzapizza.ca/store/1/delivery */
+	background-size:cover;
+	position:fixed;
+	top:0;
+	right:0;
+	left:0;
+	bottom:0;
+	content:"";
+	opacity:0.5;
+	z-index:-1;
+}
+
+#form_title
+{
+	font-family: Arial;
+	color:#f00;
+	font-size:50px;
+	text-align:center;
+	font-weight:bolder;
+}
+
+#main_table
+{
+	margin:auto;
+	margin-top:90px;
+	background-color:rgba(255,255,255,0.8);
+	padding:40px;
+	font-family:arial;
+}
+
+.date
+{
+	text-align:center;
+}
+.welcome
+{
+	text-align:center;
+	color:#f00;
+}
+
+table tr td
+{
+	vertical-align:top;
+}
+
+.section
+{
+	text-align:left;
+	color:#F00;
+}
+
+img
+{
+	width:75px;
+}
+
+img:hover
+{
+	-webkit-transform:scale(3);
+	-ms-transform:scale(3);
+	transform:scale(3);
+	-webkit-transition-duration:1.5s;
+	-o-transition-duration:1.5s;
+	transition-duration:1.5s;
+}
+
+table tr td table tr td
+{
+	text-align:center;
+}
+
+th
+{
+	font-size:30px;
+}
+
+.button input
+{
+	padding:5px;
+	font-size:20px;
+}

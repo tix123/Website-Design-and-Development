@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+
+<html>
+	
+<head>
+	<meta charset="utf-8">
+	<title>My Homepage</title>
+	<link href="lab1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!-- ‘Top’: This part of the web page should welcome users to your site. 
+It will list the internal hyperlinks to each of the other sections in 
+the page. Add a picture or a logo in this part of the page.-->
+	<a name="Top"></a>
+	<header>
+		<hgroup>
+			<h1>Welcom to My Homepage</h1>
+			<h2>“I wish, as well as everybody else, to be perfectly happy; but, like everybody else, it must be in my own way.”</h2>
+			<h2>Jane Austen, Sense and Sensibility</h2>
+		</hgroup>
+		<figure>
+			<img src="photos/coffee.jpg" alt="coffee">
+			<figcaption>A Coffee with latte heart</figcaption>
+		</figure>
+	</header>
+	
+	<nav>
+		<ul>
+			<li><a href="#AboutMe">About Me</a></li> 
+			<li><a href="#Courses">Courses</a></li>  
+			<li><a href="#WorkExperience">Work Experience</a></li> 
+			<li><a href="#ContactMe">Contact Me</a></li> 
+		</ul>
+	</nav>
+
+<!--‘About Me’: This part of the page will include:
+Three or four interesting facts about yourself.  (Where you were born. Favourite Food etc)
+Two or three pictures that are located in your ‘photos’ directory.-->
+
+<section id="AboutMe">
+<a name="AboutMe"><h3>About Me</h3></a>
+<p>My name is Sean Chen.</p>
+<p>I am learning software development at SAIT</p>
+<p>I come from Taiwan.</p>
+<p>I eat pizza every day because pizza is cheap in Canada.</p>
+<P>I like jogging and cycling.</P>
+<p>I like to add colorful marshmallows into hot cocoa.</p>
+<p>I want to learn how to build a tiny house.</p>
+<p>I cut my hair by myself because cutting hair in Canada is very expensive.</p>
+<p>I plan to have an RV in the future, but I cannot drive.</p>
+
+		<figure>
+			<img src="photos/riverside.jpg" alt="riverside">
+			<figcaption>A riverside scenery in Taiwan</figcaption>
+		</figure>
+		
+		<figure>
+			<img src="photos/SAIT.jpg" alt="SAIT">
+			<figcaption>The Southern Alberta Institute of Technology</figcaption>
+		</figure>
+		
+		<figure>
+			<img src="photos/airplane.jpg" alt="airplane">
+			<figcaption>The airplane I took on my way to Canada</figcaption>
+		</figure>
+</section>
+<hr>
+
+<!--‘Courses’: Display a table of courses you are taking.  Include a short
+ description of each course. Use the CSS file to experiment with different 
+ fonts for the table data. Use ‘padding’ and ‘borders’ to change the 
+ appearance of the table.-->
+<section id="Courses">
+<a name="Courses"><h3>Courses</h3></a>
+
+<p>
+These are the courses I am learning at school this semester.
+</p>
+
+<table>
+	<tr>
+		<th>Course</th><th>Title</th><th>Description</th>
+	</tr>
+
+	<tr>
+		<td>CMPS-253</td><td>Interface Design</td><td>Learn how to design interface</td>
+	</tr>
+
+	<tr>
+		<td>CPRG-250</td><td>Database Design and Programming</td><td>Learn how to use database</td>
+	</tr>
+
+	<tr>
+		<td>CPRG-251</td><td>Object Oriented Programming Essentials</td><td>Learn OOP structure with Java</td>
+	</tr>
+
+	<tr>
+		<td>CPRG-256</td><td>Website Development Fundamentals</td><td>Learn how to build a website</td>
+	</tr>
+
+	<tr>
+		<td>HREL-250</td><td>Business Dynamics</td><td>Learn new technologies</td>
+	</tr>
+
+</table>
+</section>
+<hr>
+
+<!--‘Work Experience’: Include a ‘mini resume’ listing your recent work experience.-->
+<section id="WorkExperience">
+<a name="WorkExperience"><h3>Work Experience</h3></a>
+
+<P>
+I have some work experience in equipment repairing.
+</P>
+
+<table>
+	
+	<tr>
+	<td rowspan="3">
+			<figure>
+				<img src="photos/TI.jpg" alt="TI logo">
+			</figure>
+		</td>
+	
+		<th>
+			Equipment Technician
+		</th>
+	</tr>		
+	
+	<tr>
+		<td id="company">
+			Texas Instruments
+		</td>
+	</tr>		
+			
+	<tr>
+		<td id="date">		
+			2011/03 ~ 2019/08
+		<td>
+	</tr>
+	
+
+	<tr>
+		<td>
+		</td>
+		<td>
+			<ul>
+			<li>Maintenance, repair and troubleshooting of semiconductor equipment. </li>
+			<li>Improve productivity, stability and safety of semiconductor equipment.</li>
+			<li>Train and certify new-hire operators, technicians and engineers. </li>
+			<li>Write SOP documents. </li>
+			<li>Order parts and control parts inventory. </li>
+			<li>Control maintenance budget. </li>
+			<li>Execute 5S in the workplace. </li>
+			<li>Conduct new equipment verification. </li>
+			<li>Investigate quality issue.</li>
+			</ul>
+
+		</td>
+		
+	</tr>
+
+<tr>
+	<td rowspan="3">
+			<figure>
+				<img src="photos/volt.png" alt="volt logo">
+			</figure>
+		</td>
+	
+		<th>
+			Assistant Engineer
+		</th>
+	</tr>		
+	
+	<tr>
+		<td id="company">
+			Volt
+		</td>
+	</tr>		
+			
+	<tr>
+		<td id="date">		
+			2009/05 ~ 2011/02
+		<td>
+	</tr>
+	
+
+	<tr>
+		<td>
+		</td>
+		<td>
+			<ul>
+			<li>Maintenance, repair and troubleshooting of semiconductor equipment. </li>
+			<li>Improve productivity, stability and safety of semiconductor equipment.</li>
+			</ul>
+
+		</td>
+		
+	</tr>
+
+
+</table>
+
+</section>
+<hr>
+
+<!--‘Contact Me’: Create a simple form that includes the following information:
+A message subject
+Message type: Personal or Work
+Message text field
+Include a ‘submit’ and ‘reset’ button. The ‘submit’ button will send 
+the data to: personal@sait.ca . The form will be in the centre of the page.  
+Use the appropriate ‘tags’ in the CSS file to control the appearance of the form.-->
+<section id="ContactMe">
+<a name="ContactMe"><h3>Contact Me</h3></a>
+
+<P>
+I am looking forward to having a message from you.
+</p>
+
+<form method="get" action="mailto:personal@sait.ca">
+<table>
+<tr>
+	<td>
+		<label for="subject">Message Subject:</label>
+	</td>
+	<td>
+		<input type="text" name="subject" id="subject" size="54" maxlength="50" required>
+	</td>
+<tr>	
+	<td>
+		<label for="type">Message Type:</label>
+	</td>
+	
+	<td>
+	<input type="radio" name="type" id="type">Personal &nbsp;
+	<input type="radio" name="type" id="type">Work
+	</td>
+</tr>	
+
+<tr>	
+	<td>
+		<label for="content">Message Content:</label>
+		
+	</td>
+	
+	<td>
+		<textarea name="content" id="content" cols="50" rows="10" required></textarea>
+	</td>
+</tr>	
+
+
+</table>
+
+<input type="submit" value="Submit">&nbsp; &nbsp;<input type="reset" value="Clear">
+
+</form>
+
+</section>
+<hr>
+
+<!--At the bottom of the page, include an internal hyperlink to the top of the page.-->
+<footer>
+	<a href="#Top">Return to Top</a> 
+</footer>
+
+
+</body>
+
+
+</html>
