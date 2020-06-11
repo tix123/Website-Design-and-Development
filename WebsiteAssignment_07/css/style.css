@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+
+body::after
+{
+	background-image: url('../img/background.jpg');
+	/* Source: https://globalnews.ca/news/4069769/nanaimo-couple-awarded-1-7-million-are-back-in-court/  */
+	background-size:cover;
+	position:fixed;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	content:"";
+	z-index:-1;
+	opacity:0.3;
+}
+
+table
+{
+	margin:auto;
+	margin-top:100px;
+	background-color:rgba(200,200,200,0.6);
+	padding:20px;
+}
+
+table td
+{
+	font-family: arial;
+}
+
+th
+{
+	font-family: 'Fjalla One', sans-serif;
+	font-size:40px;
+}
+
+hr
+{
+	border:none;
+	border-top:1px dotted #000;
+}

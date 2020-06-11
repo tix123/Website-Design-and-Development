@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="HSIAOYU CHEN">
+	<title>Unit Convert</title>
+	<link href="css\style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/convert.js"></script>
+</head>
+
+<body>
+
+<table>
+	<tr>
+		<th colspan="3">Unit Converter</th>
+	</tr>
+	<tr>
+		<td colspan="3"><hr></td>
+	</tr>
+	<tr>
+		<td>Metre</td>
+		<td></td>
+		<td>Foot</td>
+	</tr>
+	<tr>
+		<td><input type="number" min="0" id="metre" onchange="metre_to_foot(this.value) "> </td>
+		<td>=</td>
+		<td><input type="number" min="0" id="foot" onchange="foot_to_metre(this.value) "> </td>
+	</tr>
+	<tr>
+		<td colspan="3"><hr></td>
+	</tr>
+	<tr>
+		<td>Centimetre</td>
+		<td></td>
+		<td>Inch</td>
+	</tr>
+	<tr>
+		<td><input type="number" min="0" id="centimetre" onchange="centimetre_to_inch(this.value) "> </td>
+		<td>=</td>
+		<td><input type="number" min="0" id="inch" onchange="inch_to_centimetre(this.value) "> </td>
+	</tr>
+	<tr>
+		<td colspan="3"><hr></td>
+	</tr>
+	<tr>
+		<td>Kilogram</td>
+		<td></td>
+		<td>Pound</td>
+	</tr>
+	<tr>
+		<td><input type="number" min="0" id="kilogram" onchange="kilogram_to_pound(this.value) "> </td>
+		<td>=</td>
+		<td><input type="number" min="0" id="pound" onchange="pound_to_kilogram(this.value) "> </td>
+	</tr>
+	<tr>
+		<td colspan="3"><hr></td>
+	</tr>
+	<tr>
+		<td>Litre</td>
+		<td></td>
+		<td>Gallon</td>
+	</tr>
+	<tr>
+		<td><input type="number" min="0" id="litre" onchange="litre_to_gallon(this.value) "> </td>
+		<td>=</td>
+		<td><input type="number" min="0" id="gallon" onchange="gallon_to_litre(this.value) "> </td>
+	</tr>
+		
+
+</table>
+
+</body>
+
+</html>

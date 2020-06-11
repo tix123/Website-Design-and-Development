@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+body::after
+{
+	background-image: url('../img/background.jpg');
+	/* Source: https://www.wallpapersworldonline.com/palm-trees-and-beach-umbrellas/  */
+	background-size:cover;
+	position:fixed;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	content:"";
+	z-index:-1;
+	opacity:0.2;
+}
+
+body
+{
+	text-align:center;
+}
+
+header
+{
+	position:fixed;
+	top:0;
+	right:0;
+	left:0;
+	background-color:#fa0;
+	color:#fff;
+	font-size:70px;
+	font-family: 'Lobster', cursive;
+	text-shadow: -2px -2px 10px #0ff, 2px 2px 10px #00f;
+}
+
+header img
+{
+	width:60px;
+}
+
+table
+{
+	margin:auto;
+	margin-top: 100px;
+	font-family: 'Shadows Into Light', cursive;
+	color:#009;
+	font-size:40px;
+	text-shadow: 3px 3px 3px #aaa;
+}
+
+footer
+{
+	position:fixed;
+	bottom:0;
+	right:0;
+	left:0;
+	background-color:#000;
+	color:#fff;
+	padding:3px;
+}

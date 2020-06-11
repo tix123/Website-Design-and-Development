@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Nunito&display=swap');
+
+header
+{
+	position:fixed;
+	top:0;
+	right:0;
+	left:0;
+	background-color:#F50;
+	font-size:14px;
+	text-align:center;
+	font-family: 'Nunito', sans-serif;
+	color:#fff;
+	padding:8px;
+}
+
+#company_name
+{
+	font-size:30px;
+	font-family: 'Fredoka One', cursive;
+}
+
+body::after
+{
+	background-image:url('../img/background.jpg');
+	/* Source: https://www.bettycrocker.com/products/betty-crocker-baking-and-cake-mixes/rainbow-chip */
+	background-size:cover;
+	position:fixed;
+	top:0;
+	right:0;
+	left:0;
+	bottom:0;
+	content:"";
+	opacity:0.5;
+	z-index:-1;
+}
+
+#form_title
+{
+	font-family: Arial;
+	color:#f00;
+	font-size:50px;
+	text-align:center;
+	font-weight:bolder;
+}
+
+#main_table
+{
+	margin:auto;
+	margin-top:100px;
+	background-color:rgba(255,255,255,0.8);
+	padding:20px;
+	font-family:arial;
+}
+
+.date
+{
+	text-align:center;
+}
+
+table tr td table tr td
+{
+	padding:0px 10px 0px 10px;
+}
+
+.section
+{
+	text-align:left;
+	color:#F00;
+}
+
+
+th
+{
+	font-size:30px;
+}
+
+.button input
+{
+	padding:5px;
+	font-size:20px;
+}

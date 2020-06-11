@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="HSIAOYU CHEN">
+	<title>Dodgy Brakes Car Rental</title>
+	<link href="css\style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/rent.js"></script>
+</head>
+
+<body>
+
+<header>
+	DODGY BRAKES
+	<img src="img/logo.png" alt="logo">
+	CAR RENTAL
+</header>
+
+<table id="main_table">
+	<tr>
+		<td class="search_area"><span class="search">Search</span><span class="by_last_name">by Last Name</span></td>
+		<th colspan="6" class="rental_area">Client Information</th>
+	</tr>
+	<tr>
+		<td class="search_area"><input type="text" id="search_last_name"  size="23"></td>
+		<td class="rental_area form_title">Last Name:</td>
+		<td><input type="text" id="last_name" disabled></td>
+		<td class="form_title">First Name:</td>
+		<td><input type="text" id="first_name" disabled></td>
+		<td class="form_title">Address:</td>
+		<td><input type="text" id="address" disabled></td>
+	</tr>
+	<tr>
+		<td rowspan="8" id="client_info_area" class="search_area"><div id="client_info"></div></td>
+		<td class="rental_area form_title">E-mail:</td>
+		<td><input type="text" id="email" disabled></td>
+		<td class="form_title">Phone:</td>
+		<td><input type="text" id="phone" disabled></td>
+		<td class="form_title">State/Province:</td>
+		<td><input type="text" id="state_prov" disabled></td>
+	</tr>
+
+	<tr>
+
+		<th colspan="6" class="rental_area" id="rental_option">Rental Option</th>
+	</tr>
+
+	<tr>
+
+
+		<td class="rental_area form_title">Type:</td>
+		<td colspan="5">
+			<table>
+				<tr>
+					<td><input type="radio" name="car_type" id="Compact" value="15" disabled checked></td>
+					<td>Compact $15/day</td>
+					<td><input type="radio" name="car_type" id="Mid-size" value="20" disabled></td>
+					<td>Mid-size $20/day</td>
+					<td><input type="radio" name="car_type" id="Luxury" value="35" disabled></td>
+					<td>Luxury $35/day</td>
+					<td><input type="radio" name="car_type" id="Van/Truck" value="40" disabled></td>
+					<td>Van/Truck $40/day</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><img src="img/Compact.png" alt="Compact"></td>
+					<td></td>
+					<td><img src="img/Midsize.png" alt="Mid-size"></td>
+					<td></td>
+					<td><img src="img/Luxury.png" alt="Luxury"></td>
+					<td></td>
+					<td><img src="img/Truck.png" alt="Van/Truck"></td>
+					<!-- https://www.avis.ca/en/reservation#/vehicles -->
+				</tr>
+			</table>
+		</td>
+
+	</tr>
+	<tr>
+		<td class="rental_area form_title">Option:</td>
+		<td colspan="5"><input type="checkbox" id="roof_rack" disabled>Roof Rack $5/day </td>
+	</tr>
+	<tr>
+		<td class="rental_area form_title"></td>
+		<td colspan="5"><input type="checkbox" id="bicycle_rack" disabled>Bicycle Rack $5/day </td>
+	</tr>
+	<tr>
+		<td class="rental_area form_title"></td>
+		<td colspan="5"><input type="checkbox" id="gps" disabled>GPS $10</td>
+	</tr>
+	<tr>
+		<td class="rental_area form_title"></td>
+		<td colspan="5"><input type="checkbox" id="child_seat" disabled>Child Seat free</td>
+	</tr>
+	<tr>
+		<td class="rental_area form_title">Days:</td>
+		<td colspan="5"><input type="number" id="days" min="1" max="30" disabled></td>
+	</tr>
+	<tr>
+		<td colspan="7" id="button_row"><input type="button" value="Rent" id="rent_button" onclick="rent(); return false" disabled></td>
+	</tr>
+</table>
+
+<footer>
+	🕒&nbsp;<span id="current_date"></span>
+</footer>
+
+</body>
+
+</html>

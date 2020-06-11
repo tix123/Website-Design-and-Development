@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>New City Bakeries</title>
+	<meta name="author" content="HSIAOYU CHEN">
+	<link href="css\style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/order.js"></script>
+</head>
+
+
+<body>
+
+	<header>
+	<div id="company_name">New City Bakeries</div>
+	1301 16 Ave NW, Calgary, AB T2M 0L4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (403)284-7248 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Order@NewCityBakeries.ca
+	</header>
+
+
+
+	<form onsubmit="order(); return false">
+	<table id="main_table">
+	<tr>
+		<td colspan="2" id="form_title">Order Your Cake</td>
+	</tr>
+	
+	<tr>
+		<td colspan="2"><hr></td>
+	</tr>
+	
+	<tr>
+		<td><label for="firstname">First Name</label></td>
+		<td><input type="text" name="firstname" id="firstname" pattern="[A-Z a-z\-]{1,25}" title="Alphabetical characters, space and hyphens only" required autofocus></td>
+	</tr>
+	<tr>	
+		<td><label for="lastname">Last Name</label></td>
+		<td><input type="text" name="lastname" id="lastname" pattern="[A-Z a-z\-]{1,25}" title="Alphabetical characters, space and hyphens only" required></td>
+	</tr>
+	<tr>
+		<td><label for="address">Address</label></td>
+		<td><input type="text" name="address" id="address" size="50" required></td>
+	</tr>
+	<tr>
+		<td><label for="postal">Postal Code</label></td>
+		<td><input type="text" name="postal" id="postal" pattern="[A-Z]{1}\d{1}[A-Z]{1} \d{1}[A-Z]{1}\d{1}"  title="Example: T2M 3G1 uppercase only" required>&nbsp;&nbsp;Example: T2M 3G1</td>
+	</tr>
+	<tr>
+		<td><label for="phone">Phone Number</label></td>
+		<td><input type="tel" name="phone" id="phone" pattern="\d{3}-\d{3}-\d{4}" placeholder="444-999-1234" title="Example: 444-999-1234" required>&nbsp;&nbsp;Example: 444-999-1234</td>
+	</tr>
+	<tr>	
+		<td><label for="email">E-mail</label></td>
+		<td><input type="email" name="email" id="email"  pattern="[A-Za-z0-9._-]{2,}@[A-Za-z0-9._-]{2,}" title="Example: Jack@gmail.com" required>&nbsp;&nbsp;Example: Jack@gmail.com</td>
+	</tr>
+	
+	<tr>
+		<td colspan="2"><hr></td>
+	</tr>
+
+	<tr>
+		<td>Cake Type</td>
+		<td>
+		<input type="radio" name="cake_types" id="sheet_cakes" value="sheet_cakes" onchange="sheet_cake_form();"><label for="sheet_cakes">Sheet Cakes</label>
+		<input type="radio" name="cake_types" id="round_cakes" value="round_cakes" onchange="round_cake_form();"><label for="round_cakes">Round Cakes</label>
+		</td>
+	</tr>
+
+
+	<tr>
+		<td></td>
+		<td><div id="cake_type"></div></td>
+	</tr>
+
+
+	
+	<tr>
+		<td colspan="2"><hr></td>
+	</tr>
+	
+	<tr>
+		<th colspan="2">
+		<div class="button"><input type="submit" value="Send" >&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Clear"></div>
+		</th>
+	</tr>
+	
+	</table>
+	</form>
+	
+
+</body>
+
+
+
+</html>

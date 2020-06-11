@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Western Cascade Finance</title>
+	<link href="css\style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<header>
+	<img src="img\logo.png">
+	<!-- Source: https://www.westerncascade.com/  -->
+	Western Cascade Finance
+</header>
+	
+	<form method="get" action="mailto:applications@wcf.ab.ca">
+
+	<table>
+	
+	<tr>
+		<th colspan="2">Online Registration Form</th>
+	</tr>
+	<tr>
+		<th colspan="2"><hr></th>
+	</tr>
+	<tr>
+		<td><label for="today">Current Date</label></td>
+		<td><input type="date" name="today" id="today" required></td>
+	</tr>
+	<tr>	
+		<td><label for="name">First and Last name</label></td>
+		<td><input type="text" name="name" id="name" pattern="[A-Za-z \-]{1,25}" title="Alphabetical characters, space and hyphens only" required></td>
+	</tr>
+	<tr>	
+		<td><label for="address">Street Address</label></td>
+		<td><input type="text" name="address" id="address" required></td>
+	</tr>
+	<tr>	
+		<td><label for="postal">Postal Code</label></td>
+		<td><input type="text" name="postal" id="postal" pattern="[A-Z]{1}\d{1}[A-Z]{1} \d{1}[A-Z]{1}\d{1}"  title="Example: T2M 3G1 uppercase only" required>&nbsp;Example: T2M 3G1</td>
+	</tr>
+	<tr>	
+		<td><label for="phone">Phone Number</label></td>
+		<td><input type="tel" name="phone" id="phone" pattern="\(\d{3}\)\d{3}-\d{4}" placeholder="(444)999-1234" title="Example: (444)999-1234" required>
+		<input type="radio" name="phone" id="business" checked><label for="business">Business</label>
+		<input type="radio" name="phone" id="personal"><label for="personal">Personal</label></td>
+	</tr>
+	<tr>	
+		<td><label for="email">Email</label></td>
+		<td><input type="email" name="email" id="email"  pattern="[A-Za-z0-9._-]{2,}@[A-Za-z0-9._-]{2,}" title="Example: Jack@gmail.com" required>&nbsp;Example: Jack@gmail.com</td>
+	</tr>
+	<tr>
+		<td>Current client</td>
+		<td><input type="radio" name="client" id="current_client" checked><label for="current_client">Yes</label>
+		<input type="radio" name="client" id="new_client"><label for="new_clinet">No</label></td>
+	</tr>
+	<tr>
+		<td>Gender</td>
+		<td><input type="radio" name="gender" id="male" checked><label for="male">Male</label>
+		<input type="radio" name="gender" id="female"><label for="female">Female</label></td>
+	</tr>
+	<tr>
+		<td><label for="age">Age</label></td>
+		<td><input type="number" name="age" id="age" min="18" max="150" setp="1"  required></td>
+	</tr>
+	<tr>
+		<td>Housing status</td>
+		<td><input type="radio" name="housing" id="own" checked><label for="own">Own</label>
+		<input type="radio" name="housing" id="rent"><label for="rent">Rent</label></td>
+	</tr>
+	<tr>
+		<td><label for="income">Annual Gross Income</label></td> 
+		<td><input type="number" name="income" id="income" min="0" required></td>
+	</tr>
+	<tr>
+		<td>Do you have</td>
+		<td><input type="checkbox" name="vehicle" id="vehicle"><label for="vehicle">Vehicle</label>
+		<input type="checkbox" name="PRSP" id="PRSP"><label for="PRSP">RRSP</label>
+		<input type="checkbox" name="TFSA" id="TFSA"><label for="TFSA">TFSA</label>
+		<input type="checkbox" name="RRIF" id="RRIF"><label for="RRIF">RRIF</label></td>
+	</tr>
+	<tr>
+		<th colspan="2"><hr></th>
+	</tr>
+	<tr >
+		<td colspan="2"><div class="button"><input type="submit" value="Send">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Clear"></div></td>
+	</tr>
+	</table>
+
+	
+
+	</form>
+
+</body>
+
+
+</html>

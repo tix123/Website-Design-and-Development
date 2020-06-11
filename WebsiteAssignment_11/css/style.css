@@ -1,0 +1,85 @@
+
+
+body::after
+{
+    background-image: url('../img/background.jpg');
+    /* Source: https://www.pexels.com/photo/blank-composition-desk-display-317355/  */
+    background-size:cover;
+    position:fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    content:"";
+    z-index:-1;
+    opacity:0.5;
+}
+
+body
+{
+    width: 800px;
+    text-align: center;
+    margin:auto;
+}
+
+table
+{
+    margin:auto;
+    padding:5px;
+    margin-top:60px;
+    margin-bottom:60px;
+}
+
+td
+{
+    padding:3px;
+    font-size:16px;
+    text-align: left;
+}
+
+th
+{
+    text-align: left;
+    color: #0b0080;
+}
+
+#quiz_title
+{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: Arial;
+    color: #0b0080;
+}
+
+
+#final_quiz
+{
+    margin-top:30px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px 0px 20px 0px;
+    font-family: Arial;
+}
+
+#final_quiz tr th
+{
+    padding: 0px 30px 0px 30px;
+}
+
+#final_quiz tr td
+{
+    padding: 0px 30px 0px 30px;
+}
+
+#button
+{
+    text-align: center;
+}
+
+#grade_quiz_button
+{
+    background-color: #0b0080;
+    color:#fff;
+    font-size: 20px;
+    padding:10px;
+}
