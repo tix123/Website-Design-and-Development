@@ -1,5 +1,5 @@
 # WebsiteAssignments
-<br>
+
 ## WebsiteAssignment_01 | Personal Homepage
 Check out the code from [here](https://github.com/tix123/WebsiteAssignments/tree/master/WebsiteAssignment_01)
 <p align="center">
