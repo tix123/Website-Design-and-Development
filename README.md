@@ -1,4 +1,4 @@
-# Website-Development-Fundamentals
+# Website-Design-and-Development
 
 ## WebsiteAssignment_01 | Personal Homepage
 Check out the code [here](https://github.com/tix123/Website-Development-Fundamentals/tree/master/WebsiteAssignment_01)
